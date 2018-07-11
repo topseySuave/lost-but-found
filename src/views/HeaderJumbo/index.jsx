@@ -1,39 +1,39 @@
-import React from "react";
+import React from 'react';
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from 'material-ui/styles/withStyles';
 
-import IntegrationAutosuggest from "../../components/CustomInput/AutoComplete";
-import GridContainer from "../../components/Grid/GridContainer";
-import GridItem from "../../components/Grid/GridItem";
-import Button from "../../components/CustomButtons/Button";
-import Card from "../../components/Card/Card";
+import IntegrationAutosuggest from '../../components/CustomInput/AutoComplete';
+import GridContainer from '../../components/Grid/GridContainer';
+import GridItem from '../../components/Grid/GridItem';
+import Button from '../../components/CustomButtons/Button';
+import Card from '../../components/Card/Card';
 
-import landingPageStyle from "../../assets/jss/material-kit-react/views/landingPage";
+import landingPageStyle from '../../assets/jss/material-kit-react/views/landingPage';
 import {
   infoColor,
   dangerColor,
   successColor
-} from "../../assets/jss/material-kit-react";
+} from '../../assets/jss/material-kit-react';
 
 const style = {
-  marginRight: "10px",
+  marginRight: '10px',
   columnText: {
-    color: "black",
-    padding: "10px",
-    textAlign: "justify"
+    color: 'black',
+    padding: '10px',
+    textAlign: 'justify'
   },
   iconFont: {
-    fontSize: "3rem",
-    textAlign: "center"
+    fontSize: '3rem',
+    textAlign: 'center'
   },
   alignCenter: {
-    textAlign: "center"
+    textAlign: 'center'
   },
   padContainer: {
-    padding: "5rem 0rem"
+    padding: '5rem 0rem'
   },
   bold: {
-    fontWeight: "bolder"
+    fontWeight: 'bolder'
   },
   info: {
     color: infoColor
@@ -59,12 +59,12 @@ class HeaderJumbo extends React.Component {
               lost. All you need to do is report it.
             </h4>
             <br />
-            <Button color="danger" size="lg" href="#">
-              <i style={{ ...style }} className="fas fa-flag" /> Report Lost
+            <Button color='danger' size='lg' href='#'>
+              <i style={{ ...style }} className='fas fa-flag' /> Report Lost
               Item
-            </Button>{" "}
-            <Button color="info" size="lg" href="#">
-              <i style={{ ...style }} className="fas fa-flag" /> Report Found
+            </Button>{' '}
+            <Button color='info' size='lg' href='#'>
+              <i style={{ ...style }} className='fas fa-flag' /> Report Found
               Item
             </Button>
           </GridItem>
@@ -72,9 +72,9 @@ class HeaderJumbo extends React.Component {
             <h1 className={classes.title}>Search for an item you lost</h1>
             <Card
               style={{
-                padding: "20px",
-                maxHeight: "100px",
-                backgroundColor: "rgba(255, 255, 255, .5)"
+                padding: '20px',
+                maxHeight: '100px',
+                backgroundColor: 'rgba(255, 255, 255, .5)'
               }}
             >
               <IntegrationAutosuggest />

@@ -1,30 +1,32 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-// import Card from "material-ui/Card";
-// import CardContent from "material-ui/Card/CardContent";
-// import CardHeader from "material-ui/Card/CardHeader";
-import Tabs from "material-ui/Tabs";
-import Tab from "material-ui/Tabs/Tab";
+import withStyles from 'material-ui/styles/withStyles';
+// import Card from 'material-ui/Card';
+// import CardContent from 'material-ui/Card/CardContent';
+// import CardHeader from 'material-ui/Card/CardHeader';
+import Tabs from 'material-ui/Tabs';
+import Tab from 'material-ui/Tabs/Tab';
 
 // core components
-import Card from "../../components/Card/Card.jsx";
-import CardBody from "../../components/Card/CardBody.jsx";
-import CardHeader from "../../components/Card/CardHeader.jsx";
-import customTabsStyle from "../../assets/jss/material-kit-react/components/customTabsStyle.jsx";
+import Card from '../../components/Card/Card.jsx';
+import CardBody from '../../components/Card/CardBody.jsx';
+import CardHeader from '../../components/Card/CardHeader.jsx';
+import customTabsStyle from '../../assets/jss/material-kit-react/components/customTabsStyle.jsx';
 
 class CustomTabs extends React.Component {
   state = {
     value: 0
-  };
+  }
+  
   handleChange = (event, value) => {
     this.setState({ value });
-  };
+  }
+
   render() {
     const {
       classes,
@@ -46,7 +48,7 @@ class CustomTabs extends React.Component {
       <Card plain={plainTabs}>
         <CardHeader color={headerColor} plainCard={plainTabs}>
           {title !== undefined ? (
-            <div className={cardTitle}>{"title"}</div>
+            <div className={cardTitle}>{'title'}</div>
           ) : null}
           <Tabs
             classes={{
@@ -56,7 +58,7 @@ class CustomTabs extends React.Component {
             }}
             value={this.state.value}
             onChange={this.handleChange}
-            textColor="inherit"
+            textColor='inherit'
           >
             {tabs.map((prop, key) => {
               var icon = {};
@@ -80,8 +82,8 @@ class CustomTabs extends React.Component {
                     // labelIcon: labelIcon,
                     // label: classes.label,
                     // textColorInherit: labelIcon,
-                    // // textColorInheritSelected: classes.textColorInheritSelected + " " + labelIcon,
-                    // selected: classes.textColorInheritSelected + " " + labelIcon,
+                    // // textColorInheritSelected: classes.textColorInheritSelected + ' ' + labelIcon,
+                    // selected: classes.textColorInheritSelected + ' ' + labelIcon,
                     // labelContainer: labelContainer
                   }}
                   // icon={<prop.tabIcon className={tabIcon} />}
@@ -118,18 +120,18 @@ class CustomTabs extends React.Component {
 }
 
 CustomTabs.defaultProps = {
-  headerColor: "purple"
+  headerColor: 'purple'
 };
 
 CustomTabs.propTypes = {
   classes: PropTypes.object.isRequired,
   headerColor: PropTypes.oneOf([
-    "warning",
-    "success",
-    "danger",
-    "info",
-    "primary",
-    "rose"
+    'warning',
+    'success',
+    'danger',
+    'info',
+    'primary',
+    'rose'
   ]),
   title: PropTypes.string,
   tabs: PropTypes.arrayOf(

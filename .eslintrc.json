@@ -5,6 +5,7 @@
     "es6": true,
     "mocha": true
   },
+  "parser": "esprima",
   "rules": {
     "camelcase": 0,
     "one-var": 0,
@@ -70,6 +71,11 @@
     ]
   },
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
   }
 }

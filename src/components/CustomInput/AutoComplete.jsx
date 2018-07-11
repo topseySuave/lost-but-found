@@ -70,7 +70,7 @@ function renderSuggestion(suggestion, { query, isHighlighted }) {
   const parts = parse(suggestion.label, matches);
 
   return (
-    <MenuItem selected={isHighlighted} component="div">
+    <MenuItem selected={isHighlighted} component='div'>
       <div>
         {parts.map((part, index) => {
           return part.highlight ? (
@@ -173,7 +173,6 @@ class IntegrationAutosuggest extends React.Component {
 
   render() {
     const { classes } = this.props;
-    // console.log('classes =====> ', classes.container);
 
     return (
       <Autosuggest

@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from 'material-ui/styles/withStyles';
 // core components
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import HeaderLinks from "../../components/Header/HeaderLinks";
-import Parallax from "../../components/Parallax/Parallax";
-import Headerjumbo from "../HeaderJumbo";
-import MainBodyContent from "../MainBodyContent";
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import HeaderLinks from '../../components/Header/HeaderLinks';
+import Parallax from '../../components/Parallax/Parallax';
+import Headerjumbo from '../HeaderJumbo';
+import MainBodyContent from '../MainBodyContent';
 
-import landingPageStyle from "../../assets/jss/material-kit-react/views/landingPage";
+import landingPageStyle from '../../assets/jss/material-kit-react/views/landingPage';
 
 const dashboardRoutes = [];
 
@@ -21,18 +21,18 @@ class LandingPage extends React.Component {
     return (
       <React.Fragment>
         <Header
-          color="transparent"
+          color='transparent'
           routes={dashboardRoutes}
-          brand="Lost but Found"
+          brand='Lost but Found'
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
             height: 400,
-            color: "info"
+            color: 'info'
           }}
           {...rest}
         />
-        <Parallax filter image={require("../../assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require('../../assets/img/landing-bg.jpg')}>
           <Headerjumbo />
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>

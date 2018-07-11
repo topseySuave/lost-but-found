@@ -73,19 +73,19 @@ class ConfirmationDialogRaw extends React.Component {
       <Dialog
         disableBackdropClick
         disableEscapeKeyDown
-        maxWidth="xs"
+        maxWidth='xs'
         onEntering={this.handleEntering}
-        aria-labelledby="confirmation-dialog-title"
+        aria-labelledby='confirmation-dialog-title'
         {...other}
       >
-        <DialogTitle id="confirmation-dialog-title">Phone Ringtone</DialogTitle>
+        <DialogTitle id='confirmation-dialog-title'>Phone Ringtone</DialogTitle>
         <DialogContent>
           <RadioGroup
             ref={node => {
               this.radioGroup = node;
             }}
-            aria-label="ringtone"
-            name="ringtone"
+            aria-label='ringtone'
+            name='ringtone'
             value={this.state.value}
             onChange={this.handleChange}
           >
@@ -95,10 +95,10 @@ class ConfirmationDialogRaw extends React.Component {
           </RadioGroup>
         </DialogContent>
         <DialogActions>
-          <Button onClick={this.handleCancel} color="primary">
+          <Button onClick={this.handleCancel} color='primary'>
             Cancel
           </Button>
-          <Button onClick={this.handleOk} color="primary">
+          <Button onClick={this.handleOk} color='primary'>
             Ok
           </Button>
         </DialogActions>
@@ -146,20 +146,20 @@ class ConfirmationDialog extends React.Component {
       <div className={classes.root}>
         <List>
           <ListItem button divider disabled>
-            <ListItemText primary="Interruptions" />
+            <ListItemText primary='Interruptions' />
           </ListItem>
           <ListItem
             button
             divider
-            aria-haspopup="true"
-            aria-controls="ringtone-menu"
-            aria-label="Phone ringtone"
+            aria-haspopup='true'
+            aria-controls='ringtone-menu'
+            aria-label='Phone ringtone'
             onClick={this.handleClickListItem}
           >
-            <ListItemText primary="Phone ringtone" secondary={this.state.value} />
+            <ListItemText primary='Phone ringtone' secondary={this.state.value} />
           </ListItem>
           <ListItem button divider disabled>
-            <ListItemText primary="Default notification ringtone" secondary="Tethys" />
+            <ListItemText primary='Default notification ringtone' secondary='Tethys' />
           </ListItem>
           <ConfirmationDialogRaw
             classes={{

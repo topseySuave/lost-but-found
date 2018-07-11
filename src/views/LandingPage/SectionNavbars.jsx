@@ -1,29 +1,29 @@
-import React from "react";
+import React from 'react';
 
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import List from "material-ui/List";
-import ListItem from "material-ui/List/ListItem";
+import withStyles from 'material-ui/styles/withStyles';
+import List from 'material-ui/List';
+import ListItem from 'material-ui/List/ListItem';
 // @material-ui/icons
-import Search from "@material-ui/icons/Search";
-import Email from "@material-ui/icons/Email";
-import Face from "@material-ui/icons/Face";
-import Settings from "@material-ui/icons/Settings";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import Explore from "@material-ui/icons/Explore";
+import Search from '@material-ui/icons/Search';
+import Email from '@material-ui/icons/Email';
+import Face from '@material-ui/icons/Face';
+import Settings from '@material-ui/icons/Settings';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Explore from '@material-ui/icons/Explore';
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Header from "components/Header/Header.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import GridContainer from 'components/Grid/GridContainer.jsx';
+import GridItem from 'components/Grid/GridItem.jsx';
+import Header from 'components/Header/Header.jsx';
+import CustomInput from 'components/CustomInput/CustomInput.jsx';
+import IconButton from 'components/CustomButtons/IconButton.jsx';
+import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
+import Button from 'components/CustomButtons/Button.jsx';
 
-import navbarsStyle from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx";
+import navbarsStyle from 'assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx';
 
-import image from "assets/img/bg.jpg";
-import profileImage from "assets/img/faces/avatar.jpg";
+import image from 'assets/img/bg.jpg';
+import profileImage from 'assets/img/faces/avatar.jpg';
 
 class SectionNavbars extends React.Component {
   render() {
@@ -37,46 +37,46 @@ class SectionNavbars extends React.Component {
                 <h3>Menu</h3>
               </div>
               <Header
-                brand="Menu"
-                color="primary"
+                brand='Menu'
+                color='primary'
                 leftLinks={
                   <List className={classes.list}>
                     <ListItem className={classes.listItem}>
                       <Button
-                        href="#pablo"
+                        href='#pablo'
                         className={classes.navLink}
                         onClick={e => e.preventDefault()}
-                        color="transparent"
+                        color='transparent'
                       >
                         Link
                       </Button>
                     </ListItem>
                     <ListItem className={classes.listItem}>
                       <Button
-                        href="#pablo"
+                        href='#pablo'
                         className={classes.navLink}
                         onClick={e => e.preventDefault()}
-                        color="transparent"
+                        color='transparent'
                       >
                         Link
                       </Button>
                     </ListItem>
                     <ListItem className={classes.listItem}>
                       <CustomDropdown
-                        buttonText="Dropdown"
-                        dropdownHeader="Dropdown Header"
+                        buttonText='Dropdown'
+                        dropdownHeader='Dropdown Header'
                         buttonProps={{
                           className: classes.navLink,
-                          color: "transparent"
+                          color: 'transparent'
                         }}
                         dropdownList={[
-                          "Action",
-                          "Another action",
-                          "Something else here",
+                          'Action',
+                          'Another action',
+                          'Something else here',
                           { divider: true },
-                          "Separated link",
+                          'Separated link',
                           { divider: true },
-                          "One more separated link"
+                          'One more separated link'
                         ]}
                       />
                     </ListItem>
@@ -89,37 +89,37 @@ class SectionNavbars extends React.Component {
                 <h3>Menu with Icons</h3>
               </div>
               <Header
-                brand="Icons"
-                color="info"
+                brand='Icons'
+                color='info'
                 rightLinks={
                   <List className={classes.list}>
                     <ListItem className={classes.listItem}>
-                      <Button color="transparent" className={classes.navLink}>
+                      <Button color='transparent' className={classes.navLink}>
                         <Email className={classes.icons} />
                       </Button>
                     </ListItem>
                     <ListItem className={classes.listItem}>
-                      <Button color="transparent" className={classes.navLink}>
+                      <Button color='transparent' className={classes.navLink}>
                         <Face className={classes.icons} />
                       </Button>
                     </ListItem>
                     <ListItem className={classes.listItem}>
                       <CustomDropdown
                         left
-                        dropdownHeader="Dropdown Header"
+                        dropdownHeader='Dropdown Header'
                         buttonIcon={Settings}
                         buttonProps={{
                           className: classes.navLink,
-                          color: "transparent"
+                          color: 'transparent'
                         }}
                         dropdownList={[
-                          "Action",
-                          "Another action",
-                          "Something else here",
+                          'Action',
+                          'Another action',
+                          'Something else here',
                           { divider: true },
-                          "Separated link",
+                          'Separated link',
                           { divider: true },
-                          "One more separated link"
+                          'One more separated link'
                         ]}
                       />
                     </ListItem>
@@ -132,32 +132,32 @@ class SectionNavbars extends React.Component {
             <h3>Navigation</h3>
           </div>
         </div>
-        <div id="navbar" className={classes.navbar}>
+        <div id='navbar' className={classes.navbar}>
           <div
             className={classes.navigation}
-            style={{ backgroundImage: "url(" + image + ")" }}
+            style={{ backgroundImage: 'url(' + image + ')' }}
           >
             <Header
-              brand="Brand"
-              color="rose"
+              brand='Brand'
+              color='rose'
               leftLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Link
                     </Button>
@@ -173,50 +173,50 @@ class SectionNavbars extends React.Component {
                       className: classes.formControl
                     }}
                     inputProps={{
-                      placeholder: "Search",
+                      placeholder: 'Search',
                       inputProps: {
-                        "aria-label": "Search",
+                        'aria-label': 'Search',
                         className: classes.searchInput
                       }
                     }}
                   />
-                  <IconButton color="white">
+                  <IconButton color='white'>
                     <Search className={classes.searchIcon} />
                   </IconButton>
                 </div>
               }
             />
             <Header
-              brand="Info Color"
-              color="success"
+              brand='Info Color'
+              color='success'
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
-                      className={classes.navLink + " " + classes.navLinkActive}
+                      href='#pablo'
+                      className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Discover
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Profile
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Settings
                     </Button>
@@ -225,36 +225,36 @@ class SectionNavbars extends React.Component {
               }
             />
             <Header
-              brand="Primary Color"
-              color="primary"
+              brand='Primary Color'
+              color='primary'
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
-                      className={classes.navLink + " " + classes.navLinkActive}
+                      href='#pablo'
+                      className={classes.navLink + ' ' + classes.navLinkActive}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       <Explore className={classes.icons} /> Discover
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       <AccountCircle className={classes.icons} /> Profile
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       <Settings className={classes.icons} /> Settings
                     </Button>
@@ -263,36 +263,36 @@ class SectionNavbars extends React.Component {
               }
             />
             <Header
-              brand="Navbar with notifications"
-              color="dark"
+              brand='Navbar with notifications'
+              color='dark'
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Discover
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Wishlist
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <IconButton
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.notificationNavLink}
                       onClick={e => e.preventDefault()}
-                      color="rose"
+                      color='rose'
                     >
                       <Email className={classes.icons} />
                     </IconButton>
@@ -301,24 +301,24 @@ class SectionNavbars extends React.Component {
                     <CustomDropdown
                       left
                       caret={false}
-                      hoverColor="black"
-                      dropdownHeader="Dropdown Header"
+                      hoverColor='black'
+                      dropdownHeader='Dropdown Header'
                       buttonText={
                         <img
                           src={profileImage}
                           className={classes.img}
-                          alt="profile"
+                          alt='profile'
                         />
                       }
                       buttonProps={{
                         className:
-                          classes.navLink + " " + classes.imageDropdownButton,
-                        color: "transparent"
+                          classes.navLink + ' ' + classes.imageDropdownButton,
+                        color: 'transparent'
                       }}
                       dropdownList={[
-                        "Me",
-                        "Settings and other stuff",
-                        "Sign out"
+                        'Me',
+                        'Settings and other stuff',
+                        'Sign out'
                       ]}
                     />
                   </ListItem>
@@ -326,35 +326,35 @@ class SectionNavbars extends React.Component {
               }
             />
             <Header
-              brand="Navbar with profile"
+              brand='Navbar with profile'
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Discover
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.navLink}
                       onClick={e => e.preventDefault()}
-                      color="transparent"
+                      color='transparent'
                     >
                       Wishlist
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      href="#pablo"
+                      href='#pablo'
                       className={classes.registerNavLink}
                       onClick={e => e.preventDefault()}
-                      color="rose"
+                      color='rose'
                       round
                     >
                       Regiter
@@ -364,61 +364,61 @@ class SectionNavbars extends React.Component {
               }
             />
             <Header
-              brand="Transparent"
-              color="transparent"
+              brand='Transparent'
+              color='transparent'
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
                     <Button
-                      color="transparent"
+                      color='transparent'
                       className={
-                        classes.navLink + " " + classes.socialIconsButton
+                        classes.navLink + ' ' + classes.socialIconsButton
                       }
                     >
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
+                          ' ' +
                           classes.marginRight5 +
-                          " fab fa-twitter"
+                          ' fab fa-twitter'
                         }
-                      />{" "}
+                      />{' '}
                       Twitter
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      color="transparent"
+                      color='transparent'
                       className={
-                        classes.navLink + " " + classes.socialIconsButton
+                        classes.navLink + ' ' + classes.socialIconsButton
                       }
                     >
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
+                          ' ' +
                           classes.marginRight5 +
-                          " fab fa-facebook"
+                          ' fab fa-facebook'
                         }
-                      />{" "}
+                      />{' '}
                       Facebook
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <Button
-                      color="transparent"
+                      color='transparent'
                       className={
-                        classes.navLink + " " + classes.socialIconsButton
+                        classes.navLink + ' ' + classes.socialIconsButton
                       }
                     >
                       <i
                         className={
                           classes.socialIcons +
-                          " " +
+                          ' ' +
                           classes.marginRight5 +
-                          " fab fa-instagram"
+                          ' fab fa-instagram'
                         }
-                      />{" "}
+                      />{' '}
                       Instagram
                     </Button>
                   </ListItem>

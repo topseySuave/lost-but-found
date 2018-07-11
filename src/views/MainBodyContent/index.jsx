@@ -1,39 +1,39 @@
-import React from "react";
+import React from 'react';
 
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Divider from "@material-ui/core/Divider";
+import withStyles from 'material-ui/styles/withStyles';
+import Divider from '@material-ui/core/Divider';
 
 // core components
-import GridContainer from "../../components/Grid/GridContainer";
-import GridItem from "../../components/Grid/GridItem";
+import GridContainer from '../../components/Grid/GridContainer';
+import GridItem from '../../components/Grid/GridItem';
 
-import landingPageStyle from "../../assets/jss/material-kit-react/views/landingPage";
+import landingPageStyle from '../../assets/jss/material-kit-react/views/landingPage';
 import {
   infoColor,
   dangerColor,
   successColor
-} from "../../assets/jss/material-kit-react";
+} from '../../assets/jss/material-kit-react';
 
 const style = {
-  marginRight: "10px",
+  marginRight: '10px',
   columnText: {
-    color: "black",
-    padding: "10px",
-    textAlign: "justify"
+    color: 'black',
+    padding: '10px',
+    textAlign: 'justify'
   },
   iconFont: {
-    fontSize: "3rem",
-    textAlign: "center"
+    fontSize: '3rem',
+    textAlign: 'center'
   },
   alignCenter: {
-    textAlign: "center"
+    textAlign: 'center'
   },
   padContainer: {
-    padding: "5rem 0rem"
+    padding: '5rem 0rem'
   },
   bold: {
-    fontWeight: "bolder"
+    fontWeight: 'bolder'
   },
   info: {
     color: infoColor
@@ -56,7 +56,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className="fas fa-book"
+                  className='fas fa-book'
                   style={{ ...style.iconFont, ...style.info }}
                 />
               </h2>
@@ -73,7 +73,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className="fas fa-clock"
+                  className='fas fa-clock'
                   style={{ ...style.iconFont, ...style.success }}
                 />
               </h2>
@@ -90,7 +90,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className="fas fa-box-open"
+                  className='fas fa-box-open'
                   style={{ ...style.iconFont, ...style.danger }}
                 />
               </h2>
@@ -116,11 +116,11 @@ class MainBodyContent extends React.Component {
             <span style={{ ...style.columnText }}>
               <h5 style={{ ...style.bold }}>Statistics</h5>
               <p>
-                <b>Nigeria</b>: {"999999999"} found items - {"99999999"} Lost
+                <b>Nigeria</b>: {'999999999'} found items - {'99999999'} Lost
                 Items
               </p>
               <p>
-                <b>World Wide</b>: {"999999999"} found items - {"99999999"} Lost
+                <b>World Wide</b>: {'999999999'} found items - {'99999999'} Lost
                 Items
               </p>
             </span>
