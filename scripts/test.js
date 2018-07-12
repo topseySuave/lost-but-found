@@ -19,9 +19,11 @@ let argv = process.argv.slice(2);
 
 // Watch unless on CI or in coverage mode
 if (!process.env.CI && argv.indexOf('--coverage') < 0) {
-  argv.push('--coverage');
   argv.push('--watchAll');
 }
+argv.push('-u');
+argv.push('--maxWorkers=4');
+argv.push('--coverage');
 
 
 jest.run(argv);
