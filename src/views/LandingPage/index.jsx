@@ -11,19 +11,19 @@ import Parallax from '../../components/Parallax/Parallax';
 import Headerjumbo from '../HeaderJumbo';
 import MainBodyContent from '../MainBodyContent';
 
-import landingPageStyle from '../../assets/jss/material-kit-react/views/landingPage';
+import landingPageStyle from '../../assets/jss/material-kit-react/landingPage';
 
 const dashboardRoutes = [];
 
-class LandingPage extends React.Component {
+export class LandingPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
       <React.Fragment>
         <Header
-          color='transparent'
+          color="transparent"
           routes={dashboardRoutes}
-          brand='Lost but Found'
+          brand="Lost but Found"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

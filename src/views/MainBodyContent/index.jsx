@@ -8,7 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import GridContainer from '../../components/Grid/GridContainer';
 import GridItem from '../../components/Grid/GridItem';
 
-import landingPageStyle from '../../assets/jss/material-kit-react/views/landingPage';
+import landingPageStyle from '../../assets/jss/material-kit-react/landingPage';
 import {
   infoColor,
   dangerColor,
@@ -46,7 +46,7 @@ const style = {
   }
 };
 
-class MainBodyContent extends React.Component {
+export class MainBodyContent extends React.Component {
   render() {
     const { classes } = this.props;
     return (
@@ -56,7 +56,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className='fas fa-book'
+                  className="fas fa-book"
                   style={{ ...style.iconFont, ...style.info }}
                 />
               </h2>
@@ -73,7 +73,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className='fas fa-clock'
+                  className="fas fa-clock"
                   style={{ ...style.iconFont, ...style.success }}
                 />
               </h2>
@@ -90,7 +90,7 @@ class MainBodyContent extends React.Component {
             <span style={style.columnText}>
               <h2 style={style.alignCenter}>
                 <i
-                  className='fas fa-box-open'
+                  className="fas fa-box-open"
                   style={{ ...style.iconFont, ...style.danger }}
                 />
               </h2>
