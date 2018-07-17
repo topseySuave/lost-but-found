@@ -25,5 +25,4 @@ argv.push('-u');
 argv.push('--maxWorkers=4');
 argv.push('--coverage');
 
-
 jest.run(argv);
