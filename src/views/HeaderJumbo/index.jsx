@@ -7,6 +7,7 @@ import GridContainer from '../../components/Grid/GridContainer';
 import GridItem from '../../components/Grid/GridItem';
 import Button from '../../components/CustomButtons/Button';
 import Card from '../../components/Card/Card';
+// import FormModal from '../../components/Modal/FormModal';
 
 import landingPageStyle from '../../assets/jss/material-kit-react/landingPage';
 import {
@@ -47,6 +48,16 @@ const style = {
 };
 
 export class HeaderJumbo extends React.Component {
+  state = {
+    openReportFoundItem: false
+  }
+
+  renderReportFoundItem = () => {
+    this.setState({
+      openReportFoundItem: true
+    });
+  } // 0072420307
+
   render() {
     const { classes } = this.props;
     return (
@@ -59,11 +70,21 @@ export class HeaderJumbo extends React.Component {
               lost. All you need to do is report it.
             </h4>
             <br />
-            <Button color="danger" size="lg" href="#">
+            <Button
+              id="report-lost-item"
+              color="danger"
+              size="lg"
+              href="#"
+            >
               <i style={{ ...style }} className="fas fa-flag" /> Report Lost
               Item
             </Button>{' '}
-            <Button color="info" size="lg" href="#">
+            <Button
+              id="report-found-item"
+              color="info"
+              size="lg"
+              onClick={() => this.renderReportFoundItem()}
+            >
               <i style={{ ...style }} className="fas fa-flag" /> Report Found
               Item
             </Button>
